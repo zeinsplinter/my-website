@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CalmaxTechZone</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <h1>CalmaxTechZone</h1>
+            <p>Your World of Technology</p>
+        </div>
+    </header>
+
+<div class="cart-bar">
+    <span>🛒 My Shopping Cart</span>
+    <span>Items: <strong id="cart-count">0</strong></span>
+    <span>Total: KSh <strong id="cart-total">0</strong></span>
+</div>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Phones</a>
+        <a href="#">Laptops</a>
+        <a href="#">Accessories</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <main>
+        
+<section class="products" id="products">
+
+    <div class="section-heading">
+        
+<section class="hero">
+    <div class="hero-content">
+        <h1>Welcome to CalmaxTechZone</h1>
+
+        <p>Discover the latest smartphones, laptops
+        and accessories at amazing prices.</p>
+
+        <a href="#featured-products" class="shop-btn">
+            Shop Now
+        </a>
+    </div>
+</section>
+
+    <section id="featured-products">
+    <p>Explore our latest technology collection</p>
+</div>
+
+<div class="category-filter">
+    <button onclick="filterCategory('all')">All Products</button>
+    <button onclick="filterCategory('phone')">Phones</button>
+    <button onclick="filterCategory('laptop')">Laptops</button>
+    <button onclick="filterCategory('accessory')">Accessories</button>
+</div>
+
+<div class="search-container">
+    <input
+        type="text"
+        id="productSearch"
+        placeholder="Search phones, laptops and accessories..."
+        onkeyup="searchProducts()"
+    >
+</div>
+
+    <div class="product-container">
+
+        <div class="product-card" data-category="phone">
+            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=500" alt="Smartphone">
+            <h3>Samsung Smartphone</h3>
+            <p>KSh 25,000</p>
+            <button onclick="addToCart('Samsung Smartphone', 25000)">
+    Add to Cart
+</button>
+</div>
+
+<div class="product-card" data-category="phone">
+    <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=500" alt="Tecno Smartphone">
+    <h3>Tecno Smartphone</h3>
+    <p>KSh 18,000</p>
+    <button onclick="addToCart('Tecno Smartphone', 18000)">
+        Add to Cart
+    </button>
+</div>
+
+        <div class="product-card" data-category="phone">
+            <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=500" alt="Laptop">
+            <h3>HP Laptop</h3>
+            <p>KSh 45,000</p>
+            <button onclick="addToCart('HP Laptop', 45000)">
+    Add to Cart
+</button>
+        </div>
+
+        <div class="product-card" data-category="phone">
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500" alt="Headphones">
+            <h3>Wireless Headphones</h3>
+            <p>KSh 3,500</p>
+            <button onclick="addToCart('Wireless Headphones', 3500)">
+    Add to Cart
+</button>
+        </div>
+
+    </div>
+
+</section>
+
+
+        
+
+        
+    </main>
+
+    <footer>
+        <p>© 2026 CalmaxTechZone. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

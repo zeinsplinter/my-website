@@ -1,0 +1,378 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f7fc;
+    color: #172b4d;
+}
+
+/* HEADER */
+header {
+    background: #0755c9;
+    color: white;
+    padding: 25px 8%;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 34px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+header p {
+    margin-top: 8px;
+    color: #dcecff;
+}
+
+/* NAVIGATION */
+nav {
+    background: #063b91;
+    padding: 18px;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #7dd3fc;
+}
+
+/* HERO SECTION */
+main {
+    text-align: center;
+    padding: 85px 20px;
+    background: linear-gradient(135deg, #0755c9, #168de0);
+    color: white;
+}
+
+main h2 {
+    font-size: 38px;
+    margin-bottom: 18px;
+}
+
+main p {
+    font-size: 18px;
+    margin-bottom: 28px;
+}
+
+/* BUTTON */
+.shop-button {
+    background: white;
+    color: #0755c9;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.shop-button:hover {
+    background: #dcecff;
+}
+
+/* FOOTER */
+footer {
+    background: #063b91;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* MOBILE SUPPORT */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 25px;
+    }
+
+    main h2 {
+        font-size: 28px;
+    }
+
+    nav {
+        gap: 18px;
+    }
+}
+
+/* FEATURED PRODUCTS */
+
+.products {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.products h2 {
+    font-size: 32px;
+    color: #0755c9;
+    margin-bottom: 12px;
+}
+
+.products > p {
+    color: #64748b;
+    margin-bottom: 35px;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.product-card {
+    background: white;
+    padding: 18px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+}
+
+.product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    margin-bottom: 12px;
+}
+
+.product-card p {
+    color: #0755c9;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.product-card button {
+    background: #0755c9;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.product-card button:hover {
+    background: #063b91;
+}
+
+@media (max-width: 800px) {
+    .product-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+.section-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.section-heading h2 {
+    font-size: 32px;
+    color: #0755c9;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.section-heading p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 0;
+}
+
+/* Featured Products Heading */
+.section-heading {
+    text-align: center;
+    margin-bottom: 35px;
+    padding-top: 20px;
+}
+
+.section-heading h2 {
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.section-heading p {
+    color: #e0ecff;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+/* Product Names */
+.product-card h3 {
+    color: #172554;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+/* Welcome Banner */
+.hero {
+    background: linear-gradient(135deg, #063b91, #087de0);
+    padding: 65px 20px;
+    text-align: center;
+    color: white;
+    border-radius: 12px;
+    margin: 25px 20px 35px;
+}
+
+.hero-content h1 {
+    font-size: 38px;
+    margin-bottom: 18px;
+    color: white;
+}
+
+.hero-content p {
+    font-size: 17px;
+    color: #e0ecff;
+    margin-bottom: 28px;
+}
+
+.shop-btn {
+    display: inline-block;
+    background: white;
+    color: #0755c9;
+    padding: 13px 30px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.shop-btn:hover {
+    background: #dceaff;
+    transform: scale(1.05);
+}
+
+/* PRODUCT CARD UPGRADE */
+
+.product-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 15px;
+    overflow: hidden;
+    transition: 0.3s ease;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 22px rgba(0,0,0,0.15);
+}
+
+.product-card img {
+    width: 100%;
+    height: 190px;
+    object-fit: contain;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.product-card:hover img {
+    transform: scale(1.05);
+}
+
+.product-card h3 {
+    font-size: 17px;
+    margin: 12px 0 8px;
+}
+
+.product-card p {
+    color: #555;
+    margin: 6px 0;
+}
+
+.product-card button {
+    width: 100%;
+    padding: 11px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.product-card button:hover {
+    background: #0056b3;
+}
+
+/* RESPONSIVE PRODUCT GRID */
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+    padding: 20px;
+    align-items: stretch;
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 600px) {
+    .product-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+        padding: 10px;
+    }
+
+    .product-card {
+        padding: 10px;
+    }
+
+    .product-card img {
+        height: 140px;
+    }
+}
+
+/* PRODUCT CATEGORIES */
+
+.category-filter {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 20px;
+}
+
+.category-filter button {
+    padding: 10px 20px;
+    border: 1px solid #007bff;
+    background: white;
+    color: #007bff;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.category-filter button:hover {
+    background: #007bff;
+    color: white;
+}
+
+/* ACTIVE CATEGORY */
+
+.category-filter button.active {
+    background: #007bff;
+    color: white;
+    box-shadow: 0 3px 10px rgba(0, 123, 255, 0.25);
+}
